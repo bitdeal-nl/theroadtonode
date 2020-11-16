@@ -8,7 +8,7 @@ Ga er maar even goed voor zitten, want met dit onderdeel ben je wel even zoet. H
 
 * **Dependencies installeren**, er is wat software nodig om Bitcoin Core samen te stellen.
 * **Broncode ophalen**, door middel van Git kunnen we de nieuwste broncode ophalen.
-* **Database installeren**
+* **Database installeren, indien je van de Bitcoin Core wallet gebruik wilt maken**
 * **Bitcoin Core samenstellen**
 
 ## Dependencies
@@ -40,6 +40,7 @@ git checkout 0.20
 
 ## Database
 
+Deze stap is optioneel en alleen noodzakelijk indien je ook gebruik wilt maken van de Bitcoin Core wallet. Als je wel wenst gebruik te maken van de Bitcoin Core wallet, moet je bij de volgende stap bij de `./configure` command de parameters `--disable-wallet` weglaten.
 In de repository van Core is een script aanwezig waarmee de database geïnstalleerd kan worden. Voer het script uit met:
 
 ```bash
@@ -59,7 +60,7 @@ Tot slot het samenstellen van Bitcoin Core.
 ```
 
 ```bash
-./configure --enable-upnp-default --without-gui BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx-4.8" BDB_CFLAGS="-I${BDB_PREFIX}/include"
+./configure --enable-upnp-default --without-gui --disable-wallet BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx-4.8" BDB_CFLAGS="-I${BDB_PREFIX}/include"
 ```
 
 Na op enter drukken van het volgende commando kun je wat voor jezelf gaan doen. Uit ervaring blijkt deze stap bijna anderhalf uur te duren.
