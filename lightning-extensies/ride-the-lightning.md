@@ -142,7 +142,7 @@ sudo journalctl -f -u rtl
 
 ## Gebruik
 
-Ga via je favoriete browser naar **&lt;het ip adres van je Pi&gt;:3000**. Bij mij is dat 192.168.1.6:3000. De RTL interface zal verschijnen en vragen om een wachtwoord. Mocht LND net opgestart zijn, zal RTL ook vragen om dat wachtwoord.
+Ga via je favoriete browser naar [http://localhost:3000](http://localhost:3000). De RTL interface zal verschijnen en vragen om een wachtwoord. Mocht LND net opgestart zijn, zal RTL ook vragen om dat wachtwoord.
 
 ## Bereikbaar over Tor
 
