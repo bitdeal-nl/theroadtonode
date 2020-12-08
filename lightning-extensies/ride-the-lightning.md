@@ -6,26 +6,9 @@ Tijd: 15 minuten
 
 De Lightnig Network CLI \(lncli\) is wel geinig, maar niet heel praktisch. Daarom gaan we Ride The Lightning \(RTL\) installeren. Een gebruiksvriendelijk voorkantje voor LND.
 
-## NodeJS
-
-RTL is gebouwd met NodeJS. Net als dat Golang binnengehaald moest worden voor LND, gaan we nu NodeJS binnenhalen voor RTL. We willen de nieuwste versie, dus draaien eerst een scriptje. Zorg allereerst dat je in de home directory zit met `cd ~` commando. Voer daarna het script uit.
-
-```bash
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-```
-
-Nadat het scriptje zijn werk gedaan heeft, kunnen we NodeJS installeren.
-
-```bash
-sudo apt install nodejs -y
-```
-
-Check of je de juiste versie hebt met:
-
-```bash
-node --version
-# Verwachte output: v14.15.1
-```
+{% hint style="info" %}
+Let op: dit onderdeel is afhankelijk van de [NodeJS installatie](https://node.bitdeal.nl/raspberry-pi/algemene-dependencies-installeren#nodejs). Je kunt niet verder als je NodeJS niet geinstalleerd hebt op de Raspberry Pi.
+{% endhint %}
 
 ## Installatie
 
@@ -148,4 +131,3 @@ Ga via je favoriete browser naar `het ip adres van je Pi:3000`. Bij mij is dat 1
 ## Bereikbaar over Tor
 
 Dit blijkt ietwat lastig te zijn. Meer info volgt.
-

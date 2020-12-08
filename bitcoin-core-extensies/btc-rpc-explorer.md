@@ -36,9 +36,9 @@ Herstart vervolgens `bitcoind`.
 sudo systemctl restart bitcoind.service
 ```
 
-### Node.js
-
-Zie [NodeJS](https://node.bitdeal.nl/lightning-extensies/ride-the-lightning#nodejs) op de Ride the Lightning pagina.
+{% hint style="info" %}
+Let op: dit onderdeel is afhankelijk van de [NodeJS installatie](https://node.bitdeal.nl/raspberry-pi/algemene-dependencies-installeren#nodejs). Je kunt niet verder als je NodeJS niet geinstalleerd hebt op de Raspberry Pi.
+{% endhint %}
 
 ## Installatie
 
@@ -165,4 +165,3 @@ sudo cat /var/lib/tor/btc-rpc-explorer/hostname
 ```
 
 Vul deze \(zonder portnummer\) in in je tor browser. De BTC RPC Explorer homepage zou moeten verschijnen.
-
