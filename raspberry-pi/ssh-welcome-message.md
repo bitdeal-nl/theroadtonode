@@ -13,7 +13,7 @@ Om bij het inloggen over SSH direct een overzicht te krijgen van de status van h
 ```bash
 sudo apt install jq net-tools
 cd /tmp/
-wget https://node.bitdeal.nl/.gitbook/assets/ssh-welcome-messsage.sh //Lex kan jij hier de juiste URL invoegen of aan mij doorgeven?
+wget https://raw.githubusercontent.com/bitdeal-nl/theroadtonode/.gitbook/assets/ssh-welcome-message.sh
 ```
 
 Check script en tweak.
