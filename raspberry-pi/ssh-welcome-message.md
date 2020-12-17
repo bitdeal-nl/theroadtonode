@@ -11,7 +11,7 @@ Om bij het inloggen over SSH direct een overzicht te krijgen van de status van h
 ![SSH Welcome Message](../.gitbook/assets/ssh-welcome-message.png)
 
 ```bash
-sudo apt install jq net-tools
+sudo apt install -y jq net-tools
 cd /tmp/
 wget https://raw.githubusercontent.com/bitdeal-nl/theroadtonode/.gitbook/assets/ssh-welcome-message.sh
 ```
@@ -19,7 +19,7 @@ wget https://raw.githubusercontent.com/bitdeal-nl/theroadtonode/.gitbook/assets/
 Check script en tweak.
 
 ```bash
-nano ssh-welcome-messsage.sh
+nano ssh-welcome-message.sh
 ```
 
 Pas nu de volgende regels aan:
@@ -29,7 +29,7 @@ Pas nu de volgende regels aan:
 blockexplorerip="IP-ADRES VAN PI"
 
 #Set to mount point of blockchain volume. This is used to calculate USB HDD usage %
-ext_hdd="/mnt/hdd"
+ext_hdd="/"
 ```
 Vervang in het commando IP-ADRES VAN PI met iets als 192.168.1.6. 
 
@@ -37,9 +37,9 @@ Vervang in het commando IP-ADRES VAN PI met iets als 192.168.1.6.
 # delete existing welcome scripts and install
 sudo mv /etc/update-motd.d /etc/update-motd.d.bak
 sudo mkdir /etc/update-motd.d
-sudo cp ssh-welcome-messsage.sh /etc/update-motd.d/
-sudo chmod +x /etc/update-motd.d/ssh-welcome-messsage.sh
-sudo ln -s /etc/update-motd.d/ssh-welcome-messsage.sh /usr/local/bin/show-welcome-message
+sudo cp ssh-welcome-message.sh /etc/update-motd.d/
+sudo chmod +x /etc/update-motd.d/ssh-welcome-message.sh
+sudo ln -s /etc/update-motd.d/ssh-welcome-message.sh /usr/local/bin/show-welcome-message
 ```
 Om te voorkomen dat je je Pi niet meer inkomt wanneer dit script gaat tweaken en er wellicht een foutje insluipt disablen we het script voor de `root` user.
 
