@@ -27,6 +27,12 @@ Als dat nog niet het geval is voeg je deze toe, sla je het bestand op \(met `Ctr
 sudo systemctl restart bitcoind
 ```
 
+EPS heeft een wallet nodig in Bitcoin Core. Maak deze aan als deze nog niet aanwezig is.
+
+```bash
+bitcoin-cli createwallet electrumpersonalserver true
+```
+
 ```bash
 mkdir .eps
 cd .eps
@@ -56,6 +62,7 @@ Deze config-file bevat veel commentaar en tips wat je waar moet invullen. Kijk i
 * `[master-public-keys]` — zoek in Electrum je xpub op via het menu `Wallet` &gt; `Information`
 * `[bitcoin-rpc]` — `datadir = /home/pi/.bitcoin`
 * `[electrum-server]` — kies hier voor `host = 0.0.0.0` \(ipv 127.0.0.1\)
+* `wallet_filename` — maak daar `wallet_filename = electrumpersonalserver` van als je eerder hier een speciale wallet voor hebt aangemaakt. Of vul hier `wallet.dat` in als je gebruikt maakt van de default wallet van Bitcoin Core zodat het voor EPS duidelijk is welke walletfile hij moet gebruiken. Mocht je namelijk later ook `Specter` willen gebruiken dan maakt die ook wallets aan en als je dan geen `wallet_filename` hebt opgegeven start EPS niet.
 
 {% hint style="info" %}
 let bij het laatste commando in onderstaand blokje op de punt \(.\) aan het einde van de regel
