@@ -131,3 +131,4 @@ Ga via je favoriete browser naar `het ip adres van je Pi:3000`. Bij mij is dat 1
 ## Bereikbaar over Tor
 
 Dit blijkt ietwat lastig te zijn. Meer info volgt.
+

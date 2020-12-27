@@ -21,3 +21,4 @@ cd $GOPATH/src/github.com/LN-Zap/lndconnect
 ```bash
 make
 ```
+

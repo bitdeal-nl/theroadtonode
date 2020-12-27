@@ -165,3 +165,4 @@ sudo cat /var/lib/tor/btc-rpc-explorer/hostname
 ```
 
 Vul deze \(zonder portnummer\) in in je tor browser. De BTC RPC Explorer homepage zou moeten verschijnen.
+

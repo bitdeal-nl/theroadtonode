@@ -94,3 +94,4 @@ Check of je de juiste versie hebt met:
 node --version
 # Verwachte output: v14.15.1
 ```
+

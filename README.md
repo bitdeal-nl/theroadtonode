@@ -1,7 +1,7 @@
 # Overzicht
 
 {% hint style="info" %}
-The Road to Node versie: 1.3.0  
+The Road to Node versie: 1.5.0  
 Bitcoin Core versie: 0.20.99  
 Lightning Network Daemon versie: 0.11.99  
 Tor versie: 0.3.5.10
@@ -38,6 +38,10 @@ Om makkelijker gebruik te maken van het Lightning netwerk, kun je er allerlei so
 ### iOS
 
 Het iOS gedeelte van de guide richt zich op apps voor de Apple iPhone en iPad. Zo wordt er uitgelegd hoe je de app [Fully Noded](https://node.bitdeal.nl/ios/fully-noded) - al dan niet via tor - aan jouw eigen node hangt. Met Fully Noded kun je jouw node beheren en bijvoorbeeld PSBT aanmaken en broadcasten. De app [Zap](https://node.bitdeal.nl/ios/zap) is de meest gebruiksvriendelijke manier om Lightning transacties te doen via je eigen node.
+
+### Android
+
+Het Android gedeelte van de guide richt zich op apps voor het Android besturingssysteem. Zo wordt er uitgelegd hoe je de app [Zap](https://node.bitdeal.nl/ios/zap) kunt gebruiken om channels te openen en Lightning transacties te doen - al dan niet via tor - via je eigen node over.
 
 ## Contributie leveren
 
