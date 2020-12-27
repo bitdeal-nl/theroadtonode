@@ -149,3 +149,27 @@ Als alles goed is gegaan heb je rechtsonder in het venster van Electrum een groe
 
 Hier zie je nu dat je bent verbonden met een EPS en jouw Bitcoin Node!
 
+## Updaten
+
+Stop de service.
+
+```bash
+sudo systemctl stop eps.service
+```
+
+Download vanaf de Github de tarball van de [nieuwste release](https://github.com/chris-belcher/electrum-personal-server/releases) van Electrum Personal Server. Kopiëer de link van Source code \(tar.gz\), pak deze uit en gooi de download weg. Vervang hier natuurlijk de versienummers met de meest recente.
+
+```bash
+cd ~/.eps
+wget https://github.com/chris-belcher/electrum-personal-server/archive/eps-v0.2.1.1.tar.gz
+tar -xvf eps-v0.2.1.1.tar.gz
+rm eps-v0.2.1.1.tar.gz
+cd electrum-personal-server-eps-v0.2.1.1/
+pip3 install use .
+```
+
+Start de service weer.
+
+```bash
+sudo systemctl start eps.service
+```
