@@ -6,7 +6,7 @@ description: "Because we want financial sovereignty \U0001F4AA"
 
 Bitcoin is an amazing technology. A network containing computers who are all running [a piece of code](https://github.com/bitcoin/bitcoin). These computers we call nodes and together they form the Bitcoin network. However, not every user owns a node. Many users will already get a headache by the thought of setting up a node. With this guide I want to change that. To follow this guide you will need the following things:
 
-* **interest**, without interest you won't get far;
+* **curiosity**, without curiosity you won't get far;
 * **time**, the estimated time you will need to fulfill a step is written down at the beginning of each step;
 * **money**, always pesky, but you will need around €190.
 
