@@ -8,13 +8,13 @@ De [Zap: Bitcoin Lightning Wallet](https://play.google.com/store/apps/details?id
 
 ## Voorbereiding
 
-Omdat we een headless server draaien, hebben we geen QR-code die we straks kunnen scannen dus moeten we een connectiestring plakken. Deze connectiestring maken we met [lndconnect](https://node.bitdeal.nl/lightning-extensies/lnd-connect) op je Pi. SSH je Pi in en typ:
+Omdat we een headless server draaien, hebben we geen QR-code die we straks kunnen scannen dus moeten we een connectiestring plakken. Deze connectiestring maken we met [lndconnect](https://docs.theroadtonode.com/lightning-extensies/lnd-connect) op je Pi. SSH je Pi in en typ:
 
 ```bash
 lndconnect --host=xxx.onion --port=10009 --nocert -j
 ```
 
-Waar **xxx.onion** staat, vul je natuurlijk [jouw onion-adres](https://node.bitdeal.nl/lightning/tor-aanpassen#onion-adressen) in voor de **RPC** API van LND. Er zal een lap tekst verschijnen dat iets weg heeft van het volgende:
+Waar **xxx.onion** staat, vul je natuurlijk [jouw onion-adres](https://docs.theroadtonode.com/lightning-extensies/lnd-connect) in voor de **RPC** API van LND. Er zal een lap tekst verschijnen dat iets weg heeft van het volgende:
 
 ```bash
 lndconnect://xxx.onion:10009?macaroon=heel_veel_tekens
@@ -47,4 +47,3 @@ Je krijgt nu een melding dat je verbonden bent met MAINNET met echte Bitcoin! Ta
 Je bent nu verbonden met je eigen Node.
 
 Via `Beheer...` kun je naam van je wallet aanpassen. Standaard krijgt die de naam van je Tor-adres namelijk.
-
