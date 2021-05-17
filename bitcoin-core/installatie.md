@@ -33,12 +33,11 @@ Duik de bitcoin map in. Dit is nodig tijdens de volledige installatie van Core.
 cd bitcoin
 ```
 
-Voor de mensen die iets van Git afweten: ja, we blijven op de master branch zitten. Hier zit ondersteuning voor [onion v3 adressen](https://bitcoinmagazine.nl/2020/10/bitcoin-core-tor-v3/) in, wat pas in een latere versie echt uitgebracht wordt. Wil je dat niet, kun je met het volgende commando kiezen welke versie van Core je wil. Op het moment van schrijven is [0.20](https://github.com/bitcoin/bitcoin/tags) de meest recente versie.
+Gezien de [git-flow van Bitcoin Core](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#decision-making-process) kun je er vanuit gaan dat alles in de master branch correct en foutloos functioneert. Het release proces van Bitcoin Core hakt de master branch af op een vaste datum. Alles wat op die branch zat op moment van afhakken, zal meegenomen in de release. Alles dat daarna in de branch komt, zal in een volgende release komen.
 
-Gezien de [git-flow van Bitcoin Core](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md#decision-making-process) kun je er vanuit gaan dat alles in de master branch correct en foutloos funtioneert. Het release proces van Bitcoin Core hakt de master branch af op een vaste datum. Alles wat op die branch zat op moment van afhakken, zal meegenomen in de release. Alles dat daarna in de branch komt, zal in een volgende release komen.
+Zou je toch een specifieke release willen, kun je het onderstaande commando uitvoeren. Op het moment van schrijven is [v0.21.1](https://github.com/bitcoin/bitcoin/tags) de meest recente versie. Klik je op het linkje en zie je een nieuwere versie? Verander dan het onderstaande getalletje naar iets nieuwers, zoals v0.22.0.
 
 ```bash
-# Dit is dus optioneel
 git checkout v0.21.1
 ```
 

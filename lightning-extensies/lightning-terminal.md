@@ -368,7 +368,7 @@ W kunnen LiT benaderen over port 8443, vandaar dat we die open zetten.
 sudo ufw allow 8443
 ```
 
-## Automatising
+## Automatiseren
 
 Hoe laat je Lightning Terminal \(inclusief LND, Pool, Loop en Faraday\) automatisch opstarten? Daarvoor maken we een Lightning Terminal service bestand aan.
 
