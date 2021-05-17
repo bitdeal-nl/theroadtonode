@@ -39,7 +39,7 @@ Gezien de [git-flow van Bitcoin Core](https://github.com/bitcoin/bitcoin/blob/ma
 
 ```bash
 # Dit is dus optioneel
-git checkout v0.21.0
+git checkout v0.21.1
 ```
 
 ## Database
@@ -76,10 +76,10 @@ Heb je Bitcoin Core geconfigureerd zónder wallet functionaliteit en wil je dit 
 ./configure --enable-upnp-default --without-gui BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx-4.8" BDB_CFLAGS="-I${BDB_PREFIX}/include"
 ```
 
-Na op enter drukken van het volgende commando kun je wat voor jezelf gaan doen. **Uit ervaring blijkt deze stap bijna anderhalf uur te duren.**
+Na op enter drukken van het volgende commando kun je wat voor jezelf gaan doen. **Uit ervaring blijkt deze stap bijna een uur te duren.**
 
 ```bash
-make
+make -j $(nproc)
 ```
 
 Als je wat testjes wil draaien om te kijken of alles goed zit, kun je `make check` uitvoeren. Dit is optioneel en duurt zo'n vijftien minuten.
@@ -91,4 +91,3 @@ sudo make install
 ```
 
 Dat was het voor het installeren van Core! Je kunt terug naar de home directory met `cd ~`.
-
