@@ -1,16 +1,15 @@
 ---
-description: "Omdat we financieel soeverein willen zijn \U0001F4AA"
+description: "Because we want financial sovereignty \U0001F4AA"
 ---
 
-# Doel en waarom
+# Purpose en goals
 
-Bitcoin is een geweldige technologie. Een netwerk bestaande uit computers die ieder [een stukje code](https://github.com/bitcoin/bitcoin) draaien. De computers die meedoen in het netwerk noemen we nodes en zorgen samen voor het bestaan van Bitcoin. Echter, niet iedere Bitcoin gebruiker heeft een node. Velen worden al vermoeid bij de gedachte van het opzetten van zo'n ding. Daar wil ik met deze guide verandering in brengen. Om de guide te volgen heb je het volgende nodig:
+Bitcoin is an amazing technology. A network containing computers who are all running [a piece of code](https://github.com/bitcoin/bitcoin). These computers we call nodes and together they form the Bitcoin network. However, not every user owns a node. Many users will already get a headache by the thought of setting up a node. With this guide I want to change that. To follow this guide you will need the following things:
 
-* **interesse**, zonder interesse kom je niet heel ver;
-* **tijd**, bij ieder onderdeel van de guide staat aangegeven hoeveel tijd het in beslag neemt;
-* **geld**, altijd een vervelende factor, maar reken zo rond de €190.
+* **curiosity**, without curiosity you won't get far;
+* **time**, the estimated time you will need to fulfill a step is written down at the beginning of each step;
+* **money**, always pesky, but you will need around €190.
 
-Het is trouwens niet nodig om een node te hebben voordat je gebruik kunt maken van Bitcoin. Je kunt prima gebruik maken van de spaartechnologie, maar zonder node lever je een stukje van je privacy in. Met deze guide kun je een Bitcoin en Lightning nodes opzetten die volledig op het [Tor netwerk](https://nl.wikipedia.org/wiki/Tor_%28netwerk%29) zitten. Bijkomende voordeel is dat jouw node vanaf overal bereikbaar is, ondanks een [wisselend IP](https://www.kpn.com/zakelijk/blog/dynamisch-of-statisch-ip-adres-dit-zijn-de-verschillen.htm) door je ISP.
+Setting up your own node is not necessarily the only way to use bitcoin. You can always make use of exchanges or other platforms. But if you use Bitcoin without your own node you will always trade a piece of your privacy and you will always have to trust a third party. With this guide you will be able to set up a Bitcoin and Lightning node that will work entirely behind [Tor network](https://en.wikipedia.org/wiki/Tor_(anonymity_network)). An additional advantage will be the possibility to connect to your node from all over the world. Without worrying about [dynamic-IP](https://whatismyipaddress.com/dynamic-static) or the need of opening ports on your home router.
 
-Daarnaast is het opzetten van een node ook heel leerzaam. Je krijgt een beter idee van de technische kant van Bitcoin. Hoe diep je wil gaan is aan jou. Je hoeft niet alle onderdelen van de guide te volgen en de volgorde maakt niet altijd uit. ~~Mocht een onderdeel leunen op een voorgaande, staat dat aangegeven.~~ \(wordt later toegevoegd\)
-
+Besides that, setting up a node will be very educational. You will get a better understanding of the technical side of Bitcoin. How deep you want to dive is up to you. Not all parts of the guide are mandatory and the order of doing things is not set in stone. You can make a selection of the parts that are useful to you and your situation. 
