@@ -116,7 +116,7 @@ Zet port 4000 open.
 sudo ufw allow 4000 comment "Port voor Thunderhub"
 ```
 
-Mocht je RTL van buiten je netwerk willen gebruiken, moet je port 4000 op je router opengooien en verkeer doorsturen naar je Pi.
+Mocht je Thunderhub van buiten je netwerk willen gebruiken, moet je port 4000 op je router opengooien en verkeer doorsturen naar je Pi.
 
 ## Automatiseren
 
